@@ -1,0 +1,1 @@
+*/2 * * * * $DIR/ip-update.sh
