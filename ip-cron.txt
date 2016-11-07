@@ -1,1 +1,1 @@
-*/2 * * * * $DIR/ip-update.sh
+*/2 * * * * /home/pi/Workspace/RPi-IP/ip-update.sh
