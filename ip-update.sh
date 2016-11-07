@@ -23,6 +23,6 @@ if [ "$DIFF" != "" ]; then
     mv $NEW_IP $CURRENT_IP
     git add $CURRENT_IP
     DATE=`date`
-    git commit -m 'Update: $DATE'
+    git commit -m "Update: $DATE"
     git push -f origin master
 fi
