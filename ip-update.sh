@@ -2,9 +2,9 @@
 
 NEW_IP=new-ip.txt
 CURRENT_IP=ip.txt
-#DIR=
+DIR=/home/pi/Workspace/RPi
 
-#cd $DIR
+cd $DIR
 
 echo `hostname -I` > $NEW_IP
 #echo `ifconfig` > $NEW_IP
@@ -13,14 +13,14 @@ echo `hostname -I` > $NEW_IP
 
 if [ -f $CURRENT_IP ]; then
     DIFF=`diff -q $CURRENT_IP $NEW_IP`
-    echo 'same'
-    echo $DIFF
+    #echo 'same'
+    #echo $DIFF
 else
     DIFF='differ'
 fi
 
 if [ "$DIFF" != "" ]; then
-    #mv $NEW_IP $CURRENT_IP
+    mv $NEW_IP $CURRENT_IP
     git add $CURRENT_IP
     DATE=date
     git commit -m 'Update: $DATE'
