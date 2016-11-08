@@ -9,10 +9,7 @@ ssh-keygen -t rsa    # Press enter for all values
 Make sure to press `Enter` for all questions.
 
 ### Associate the SSH key with the remote repository
-Go on github. `Settings -> Deploy keys -> Add Deploy Keys`. Copy the contents of `~/.ssh/is_rsa.pub` in the key field.
-
-### Associate the SSH key with the remote repository
-Go on github. `Settings -> Deploy keys -> Add Deploy Keys`. Copy the contents of `~/.ssh/is_rsa.pub` in the key field.
+Go on github. `Settings -> Deploy keys -> Add Deploy Keys`. Copy the contents of `~/.ssh/id_rsa.pub` in the key field.
 
 ### Set the remote URL to a form that supports SSH
 
