@@ -2,7 +2,7 @@
 
 NEW_IP=new-ip.txt
 CURRENT_IP=ip.txt
-DIR=/home/pi/Workspace/RPi
+DIR=/home/pi/Workspace/RPi-IP
 
 cd $DIR
 
@@ -25,4 +25,6 @@ if [ "$DIFF" != "" ]; then
     DATE=`date`
     git commit -m "Last update: $DATE"
     git push -f origin master
+else
+    rm $NEW_IP
 fi
