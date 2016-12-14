@@ -2,7 +2,7 @@
 
 NEW_IP=new-ip.txt
 CURRENT_IP=ip.txt
-DIR=/home/pi/Workspace/RPi-IP
+DIR=/home/pi/RPi-IP
 
 cd $DIR
 
